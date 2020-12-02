@@ -1,0 +1,16 @@
+[package]
+name = "dpi-sys"
+version = "0.1.0"
+authors = ["Xiphoseer <xiphoseer@mailbox.org>"]
+edition = "2018"
+
+[dependencies]
+cxx = "1.0"
+zmq-sys = "0.11"
+ibverbs-sys = { path = "../ibverbs-sys", version = "0.1" }
+numa-sys = { path = "../numa-sys", version = "0.1" }
+protobuf-sys = { path = "../protobuf-sys", version = "0.1" }
+
+[build-dependencies]
+cmake = "0.1"
+cxx-build = "1.0"
